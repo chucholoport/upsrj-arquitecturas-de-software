@@ -2,9 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Ejecutar pruebas",
+      "label": "Ejecutar proyecto inicial",
       "type": "shell",
-      "command": "python tests/test_evaluation.py",
+      "command": "export PYTHONPATH=. && python src/main.py",
       "group": "build",
       "presentation": {
         "echo": true,
@@ -14,89 +14,16 @@
       }
     },
     {
-      "label": "Activar todos los microservicios",
+      "label": "Ejecutar proyecto modular",
       "type": "shell",
-      "command": "./src/run-all.sh",
+      "command": "export PYTHONPATH=. && python src/app/main.py",
       "group": "build",
-      "problemMatcher": []
-    },
-    {
-      "label": "Detener todos los microservicios",
-      "type": "shell",
-      "command": "./src/stop-all.sh",
-      "group": "build",
-      "problemMatcher": []
-    },
-    {
-      "label": "Activar users_service",
-      "type": "shell",
-      "command": "./src/run-one.sh",
-      "args": ["--service", "users_service"],
-      "group": "build",
-      "problemMatcher": []
-
-    },
-    {
-      "label": "Activar products_service",
-      "type": "shell",
-      "command": "./src/run-one.sh",
-      "args": ["--service", "products_service"],
-      "group": "build",
-      "problemMatcher": []
-
-    },
-    {
-      "label": "Activar purchases_service",
-      "type": "shell",
-      "command": "./src/run-one.sh",
-      "args": ["--service", "purchases_service"],
-      "group": "build",
-      "problemMatcher": []
-
-    },
-    {
-      "label": "Activar gateway",
-      "type": "shell",
-      "command": "./src/run-one.sh",
-      "args": ["--service", "gateway"],
-      "group": "build",
-      "problemMatcher": []
-
-    },
-    {
-      "label": "Detener users_service",
-      "type": "shell",
-      "command": "./src/stop-one.sh",
-      "args": ["--service", "users_service"],
-      "group": "build",
-      "problemMatcher": []
-
-    },
-    {
-      "label": "Detener products_service",
-      "type": "shell",
-      "command": "./src/stop-one.sh",
-      "args": ["--service", "products_service"],
-      "group": "build",
-      "problemMatcher": []
-
-    },
-    {
-      "label": "Detener purchases_service",
-      "type": "shell",
-      "command": "./src/stop-one.sh",
-      "args": ["--service", "purchases_service"],
-      "group": "build",
-      "problemMatcher": []
-
-    },
-    {
-      "label": "Detener gateway",
-      "type": "shell",
-      "command": "./src/stop-one.sh",
-      "args": ["--service", "gateway"],
-      "group": "build",
-      "problemMatcher": []
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
     }
   ]
 }
