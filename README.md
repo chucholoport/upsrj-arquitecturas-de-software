@@ -12,34 +12,34 @@ Descripción: Documento principal del proyecto. Contiene instrucciones de instal
 
 # **Politécnica de Santa Rosa**
 
-- **Carrera: ISW**
-- **Materia: Arquitecturas de Software**
-- **Instructor:** Jesús Salvador López Ortega ([LinkedIn](https://www.linkedin.com/in/jesus-salvador-lopez-ortega/) | [GitHub](https://github.com/chucholoport))
+- **Carrera: <carrera>**
+- **Materia: <materia>**
+- **Profesor:** Jesús Salvador López Ortega ([LinkedIn](https://www.linkedin.com/in/jesus-salvador-lopez-ortega/) | [GitHub](https://github.com/chucholoport))
 
 ---
 
-# **Índice**
+## **Índice**
 - [**Politécnica de Santa Rosa**](#politécnica-de-santa-rosa)
-- [**Índice**](#índice)
-- [**Configuración del repositorio remoto en GitHub**](#configuración-del-repositorio-remoto-en-github)
-- [**Instalación y configuración de entorno de trabajo**](#instalación-y-configuración-de-entorno-de-trabajo)
-  - [Pasos en la terminal de Windows (CMD)](#pasos-en-la-terminal-de-windows-cmd)
-  - [Pasos en la terminal de WSL2 (Ubuntu)](#pasos-en-la-terminal-de-wsl2-ubuntu)
-  - [Instalación de Docker](#instalación-de-docker)
-- [**Configuración del repositorio remoto en GitHub**](#configuración-del-repositorio-remoto-en-github-1)
-  - [IDE de trabajo](#ide-de-trabajo)
-  - [Pasos en la terminal de WSL2 (Ubuntu)](#pasos-en-la-terminal-de-wsl2-ubuntu-1)
-  - [Ejecuta el contenedor en Visual Studio Code](#ejecuta-el-contenedor-en-visual-studio-code)
-- [**Ejecución de proyectos y pruebas**](#ejecución-de-proyectos-y-pruebas)
-- [**Contacto**](#contacto)
+  - [**Índice**](#índice)
+  - [**Configuración del repositorio remoto en GitHub**](#configuración-del-repositorio-remoto-en-github)
+  - [**Instalación y configuración de entorno de trabajo**](#instalación-y-configuración-de-entorno-de-trabajo)
+    - [Pasos en la terminal de Windows (CMD)](#pasos-en-la-terminal-de-windows-cmd)
+    - [Pasos en la terminal de WSL2 (Ubuntu)](#pasos-en-la-terminal-de-wsl2-ubuntu)
+    - [Instalación de Docker](#instalación-de-docker)
+  - [**Configuración del repositorio remoto en GitHub**](#configuración-del-repositorio-remoto-en-github-1)
+    - [IDE de trabajo](#ide-de-trabajo)
+    - [Pasos en la terminal de WSL2 (Ubuntu)](#pasos-en-la-terminal-de-wsl2-ubuntu-1)
+    - [Ejecuta el contenedor en Visual Studio Code](#ejecuta-el-contenedor-en-visual-studio-code)
+  - [**Ejecución de proyectos y pruebas**](#ejecución-de-proyectos-y-pruebas)
+  - [**Contacto**](#contacto)
 
-# **Configuración del repositorio remoto en GitHub**
+## **Configuración del repositorio remoto en GitHub**
 
-> **Nota:** **Usa tu correo personal para crear tu cuenta de GitHub.** Recuerda que GitHub es tu portafolio personal como desarrollador de software, por lo que querrás conservarlo aún después de graduarte.
+> **Nota: Usa tu correo personal para crear tu cuenta de GitHub.** Recuerda que GitHub es tu portafolio personal como desarrollador de software, por lo que querrás conservarlo aún después de graduarte.
 
 1. **Identifica el repositorio base del profesor**
 
-    Con tu cuenta accede al perfil del profesor [Jesus Lopez](https://github.com/chucholoport) y busca el repositorio de tu materia en su [lista de repositorios](https://github.com/chucholoport?tab=repositories).
+    Con tu cuenta accede al perfil del [profesor](https://github.com/chucholoport) y busca el **repositorio de tu materia** en su lista de [ repositorios](https://github.com/chucholoport?tab=repositories).
 
     ![git repos](docs/img/git_repositories.png)
 
@@ -53,9 +53,9 @@ Descripción: Documento principal del proyecto. Contiene instrucciones de instal
 
 ---
 
-# **Instalación y configuración de entorno de trabajo**
+## **Instalación y configuración de entorno de trabajo**
 
-## Pasos en la terminal de Windows (CMD)
+### Pasos en la terminal de Windows (CMD)
 
 1. **Configurar permisos para ejecutar scripts en PowerShell**
 
@@ -91,7 +91,7 @@ Descripción: Documento principal del proyecto. Contiene instrucciones de instal
 
 ---
 
-## Pasos en la terminal de WSL2 (Ubuntu)
+### Pasos en la terminal de WSL2 (Ubuntu)
 
 1. **Configurar `python` como alias de `python3`**
 
@@ -138,7 +138,8 @@ Descripción: Documento principal del proyecto. Contiene instrucciones de instal
 
             ![alt text](docs/img/git_token_copy.png)
 
-          > **Nota:** El token **solo se muestra una vez**, por lo que es recomendado que lo copies y guardes en algun archivo de texto en tu computadora.
+          > **Nota: El token solo se muestra una vez.**
+          Es recomendado que lo copies y guardes en algun archivo de texto en tu computadora.
 
           - Usa un credential helper para no tener que pegarlo cada vez
             
@@ -163,13 +164,15 @@ Descripción: Documento principal del proyecto. Contiene instrucciones de instal
 
 --- 
 
-## Instalación de Docker
+### Instalación de Docker
 
 1. **Descarga Docker Desktop**
 
-    Ve a [docker.com](https://www.docker.com/products/docker-desktop/) y descarga Docker Desktop para Windows.
+    Ve a [docker.com](https://www.docker.com/products/docker-desktop/) y descarga **Docker Desktop** para Windows.
 
 2. **Instala Docker Desktop**
+
+    Este proceso requiere que crees una cuenta de Docker y reinicies tu PC al terminar. **Puedes crear tu cuenta enlazándola a tu cuenta de GitHub.**
 
     Durante la instalación, activa la opción `Usar el motor basado en WSL2`. Docker detectará automáticamente tu distro WSL2 (Ubuntu).
 
@@ -196,9 +199,9 @@ Descripción: Documento principal del proyecto. Contiene instrucciones de instal
 
 --- 
 
-# **Configuración del repositorio remoto en GitHub**
+## **Configuración del repositorio remoto en GitHub**
 
-## IDE de trabajo
+### IDE de trabajo
    
 1. **Instala Visual Studio Code**
 
@@ -227,7 +230,7 @@ Descripción: Documento principal del proyecto. Contiene instrucciones de instal
     
     ![python ext](docs/img/extension_python.png)
 
-## Pasos en la terminal de WSL2 (Ubuntu)
+### Pasos en la terminal de WSL2 (Ubuntu)
 
 1. **Creación del directorio de trabajo**
 
@@ -265,7 +268,7 @@ Descripción: Documento principal del proyecto. Contiene instrucciones de instal
 
     ![open code](docs/img/vscode_open.png)
 
-## Ejecuta el contenedor en Visual Studio Code
+### Ejecuta el contenedor en Visual Studio Code
 
 Finalmente, al tener abierto el IDE, vamos a pedirle a Visual Studio Code que corra el contenedor del proyecto para que nos instale todas las dependencias y configuraciones necesarias. Para ello, vamos a dar click en el botón azul `><` de la parte inferior izquierda y seleccionar `Reopen in Container`.
 
@@ -275,7 +278,7 @@ Finalmente, al tener abierto el IDE, vamos a pedirle a Visual Studio Code que co
 
 --- 
 
-# **Ejecución de proyectos y pruebas**
+## **Ejecución de proyectos y pruebas**
 
 1. Dentro del contenedor, presiona `Ctrl + Shift + B` o `Ctrl + B` (según tu configuración).
 
@@ -293,13 +296,13 @@ Finalmente, al tener abierto el IDE, vamos a pedirle a Visual Studio Code que co
 
 ---
 
-# **Contacto**
+## **Contacto**
 
 ¿Dudas? Consulta los archivos de ayuda o pregunta a tu instructor.
 
 **Autor:** Jesús Salvador López Ortega  
 [LinkedIn](https://www.linkedin.com/in/jesus-salvador-lopez-ortega/) | [GitHub](https://github.com/chucholoport) | [Correo Institucional](mailto:jlopez@upsrj.edu.mx)
 
-Actualizado: septiembre 2025
+Actualizado: diciembre 2025
 
 🔙 [Volver al índice](#índice)
