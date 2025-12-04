@@ -24,6 +24,18 @@
         "focus": false,
         "panel": "shared"
       }
+    },
+    {
+      "label": "Ejecutar pruebas de requerimentos",
+      "type": "shell",
+      "command": "export PYTHONPATH=. && pytest tests/",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
     }
   ]
 }
